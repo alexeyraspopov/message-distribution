@@ -1,0 +1,14 @@
+{
+  "name": "message-distribution",
+  "description": "Actor system with messages distribution made easy",
+  "version": "0.1.0",
+  "scripts": {
+    "prepublish": "rollup --format cjs MessageDispatcher.js | babel --presets=es2015 > message-distribution.js"
+  },
+  "devDependencies": {
+    "babel-cli": "~6.22.2",
+    "babel-core": "~6.22.1",
+    "babel-preset-es2015": "~6.22.0",
+    "rollup": "~0.41.4"
+  }
+}
